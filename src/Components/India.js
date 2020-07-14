@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Card} from 'react-bootstrap';
+import Statedata from './Statedata';
 
 class India extends Component{
     render(){
@@ -56,9 +57,11 @@ class India extends Component{
                             </Card>
                         </div>
                     </div>
-
                 </div>
-
+                <div className="col-md-12">
+                    <br/>
+                    <Statedata/>
+                </div>
             </div>
         )
     }
