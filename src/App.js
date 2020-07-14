@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div>
-      <h1>Covid - 19 Status Tracker</h1>
+      <h2>Covid - 19 Status Tracker</h2>
+      
 
     </div>
   );
