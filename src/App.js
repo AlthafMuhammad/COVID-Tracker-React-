@@ -19,13 +19,13 @@ function App() {
         <Header/>
         <div className="container-fluid">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="%PUBLIC_URL%/">
               <India/>
             </Route>
-            <Route exact path="/india">
+            <Route exact path="%PUBLIC_URL%/india">
               <India/>
             </Route>
-            <Route exact path="/world">
+            <Route exact path="%PUBLIC_URL%/world">
               <World/>
             </Route>
           </Switch>
