@@ -23,10 +23,10 @@ function App() {
             <Route exact path="/COVID19-Tracker-React">
               <India/>
             </Route>
-            <Route exact path="/india">
+            <Route exact path="/COVID19-Tracker-React/india">
               <India/>
             </Route>
-            <Route exact path="/world">
+            <Route exact path="/COVID19-Tracker-React/world">
               <World/>
             </Route>
           </Switch>

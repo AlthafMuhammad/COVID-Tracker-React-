@@ -6,10 +6,10 @@ class Header extends Component{
     render(){
         return(
             <Navbar responsive bg="dark" variant="dark" fixed="top">
-            <Navbar.Brand href="/india">COVID - 19 Tracker</Navbar.Brand>
+            <Navbar.Brand href="/COVID19-Tracker-React/india">COVID - 19 Tracker</Navbar.Brand>
             <Nav className="mr-auto">
-              <Link className="nav-link" to="/india">India</Link>
-              <Link className="nav-link" to="/world">World</Link>
+              <Link className="nav-link" to="/COVID19-Tracker-React/india">India</Link>
+              <Link className="nav-link" to="/COVID19-Tracker-React/world">World</Link>
             </Nav>
           </Navbar>
         );
