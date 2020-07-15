@@ -6,7 +6,7 @@ import India from './Components/India';
 import World from './Components/World';
 import Footer from './Components/Footer';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Link,
   Route,
   Switch
@@ -20,13 +20,13 @@ function App() {
         <Header/>
         <div className="container-fluid">
           <Switch>
-            <Route exact path="/COVID19-Tracker-React">
+            <Route exact path="/">
               <India/>
             </Route>
-            <Route exact path="/COVID19-Tracker-React/india">
+            <Route exact path="/india">
               <India/>
             </Route>
-            <Route exact path="/COVID19-Tracker-React/world">
+            <Route exact path="/world">
               <World/>
             </Route>
           </Switch>
