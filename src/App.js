@@ -20,13 +20,13 @@ function App() {
         <Header/>
         <div className="container-fluid">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/COVID19-Tracker-React">
               <India/>
             </Route>
-            <Route path="/india">
+            <Route path="/COVID19-Tracker-React/india">
               <India/>
             </Route>
-            <Route path="/world">
+            <Route path="/COVID19-Tracker-React/world">
               <World/>
             </Route>
           </Switch>

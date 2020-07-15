@@ -8,8 +8,8 @@ class Header extends Component{
             <Navbar responsive bg="dark" variant="dark" fixed="top">
             <Navbar.Brand href="/">COVID - 19 Tracker</Navbar.Brand>
             <Nav className="mr-auto">
-              <Link className="nav-link" to="/india">India</Link>
-              <Link className="nav-link" to="/world">World</Link>
+              <Link className="nav-link" to="/COVID19-Tracker-React/india">India</Link>
+              <Link className="nav-link" to="/COVID19-Tracker-React/world">World</Link>
             </Nav>
           </Navbar>
         );
