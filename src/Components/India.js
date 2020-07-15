@@ -7,8 +7,8 @@ class India extends Component{
         return(
             <div className="row">
                 <div className="col-md-12">
+                    <h2>India Data</h2>
                     <img src="https://www.countryflags.io/IN/shiny/64.png"/>
-                    <h2>India</h2>
                 </div>
                 <div className="col-md-12">
                     <div className="row">

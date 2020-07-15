@@ -49,8 +49,8 @@ class Statedata extends Component{
                                 return(
                                     <Card>
                                         <Card.Header>
-                                            <Accordion.Toggle as={Button} variant="link" eventKey={ky}>
-                                                {itm}
+                                            <Accordion.Toggle as={Button} variant="dark" eventKey={ky}>
+                                                {itm} <span className="btn-primary">Total Cases: {total_confirmed}</span> <span className="btn-warning">Active: {total_active}</span> <span className="btn-success">Recovered: {total_recovered}</span> <span className="btn-danger">Death: {total_deaths}</span>
                                             </Accordion.Toggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey={ky}>
