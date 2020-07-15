@@ -22,7 +22,7 @@ class India extends Component{
             <div className="row">
                 <div className="col-md-12">
                     <h2>India Data</h2>
-                    <img src="https://www.countryflags.io/IN/shiny/64.png"/>
+                    <img src="https://www.countryflags.io/IN/shiny/64.png" alt="India"/>
                 </div>
                 <div className="col-md-12">
                     <div className="row">

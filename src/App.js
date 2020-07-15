@@ -7,7 +7,6 @@ import World from './Components/World';
 import Footer from './Components/Footer';
 import {
   HashRouter as Router,
-  Link,
   Route,
   Switch
 } from 'react-router-dom';

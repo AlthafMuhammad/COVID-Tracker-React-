@@ -27,7 +27,7 @@ class Statedata extends Component{
                         {
                             keys.map((itm,ky)=>{
                                 let districts=this.state.stateData[itm].districtData;
-                                let districtkeys=Object.keys(districts);
+                                // let districtkeys=Object.keys(districts);
 
                                 let total_confirmed=0;
                                 let total_active=0;
