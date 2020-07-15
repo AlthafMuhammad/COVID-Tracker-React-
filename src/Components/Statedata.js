@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Axios from 'axios';
-import {Accordion,Card,Button} from 'react-bootstrap';
+import {Accordion,Card,Button,Table} from 'react-bootstrap';
 
 class Statedata extends Component{
     constructor(){
@@ -29,17 +29,33 @@ class Statedata extends Component{
                                 let districts=this.state.stateData[itm].districtData;
                                 let districtkeys=Object.keys(districts);
 
-                                
+                                let total_confirmed=0;
+                                let total_active=0;
+                                let total_recovered=0;
+                                let total_deaths=0;
+
+                                let district_list=[];
+
+                                for(let x in districts){
+                                    total_active+=districts[x].active;
+                                    total_confirmed+=districts[x].confirmed;
+                                    total_deaths+=districts[x].deceased;
+                                    total_recovered+=districts[x].recovered;
+                                    let ob=districts[x];
+                                    ob["district_name"]=x;
+                                    district_list.push(ob);
+                                }
+
                                 return(
                                     <Card>
                                         <Card.Header>
-                                            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                            <Accordion.Toggle as={Button} variant="link" eventKey={ky}>
                                                 {itm}
                                             </Accordion.Toggle>
                                         </Card.Header>
-                                        <Accordion.Collapse eventKey="0">
+                                        <Accordion.Collapse eventKey={ky}>
                                             <Card.Body>
-                                                <table className="table table-bordered table-striped">
+                                                <Table responsive className="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
                                                             <td>District</td>
@@ -50,11 +66,21 @@ class Statedata extends Component{
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-
-                                                        </tr>
+                                                       {
+                                                           district_list.map((itm,ky)=>{
+                                                               return(
+                                                                   <tr>
+                                                                       <td>{itm.district_name}</td>
+                                                                       <td>{itm.confirmed}</td>
+                                                                       <td>{itm.active}</td>
+                                                                       <td>{itm.recovered}</td>
+                                                                       <td>{itm.deceased}</td>
+                                                                   </tr>
+                                                               )
+                                                           })
+                                                       }
                                                     </tbody>
-                                                </table>
+                                                </Table>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>

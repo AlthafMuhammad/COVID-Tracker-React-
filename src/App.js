@@ -15,25 +15,23 @@ import {
 
 function App() {
   return (
-    <div className="container-fluid">
       <Router>
         <Header/>
-        <Switch>
-          <Route exact path="/">
-            <India/>
-          </Route>
-          <Route exact path="/india">
-            <India/>
-          </Route>
-          <Route exact path="/world">
-            <World/>
-          </Route>
-        </Switch>
-        
+        <div className="container-fluid">
+          <Switch>
+            <Route exact path="/">
+              <India/>
+            </Route>
+            <Route exact path="/india">
+              <India/>
+            </Route>
+            <Route exact path="/world">
+              <World/>
+            </Route>
+          </Switch>
+        </div>
       </Router>
       
-
-    </div>
   );
 }
 
