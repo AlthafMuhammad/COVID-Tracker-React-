@@ -23,10 +23,10 @@ function App() {
             <Route exact path="/">
               <India/>
             </Route>
-            <Route path="/India">
+            <Route path="/india">
               <India/>
             </Route>
-            <Route path="/World">
+            <Route path="/world">
               <World/>
             </Route>
           </Switch>
