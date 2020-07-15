@@ -28,6 +28,8 @@ class Statedata extends Component{
                             keys.map((itm,ky)=>{
                                 let districts=this.state.stateData[itm].districtData;
                                 let districtkeys=Object.keys(districts);
+
+                                
                                 return(
                                     <Card>
                                         <Card.Header>
@@ -36,7 +38,24 @@ class Statedata extends Component{
                                             </Accordion.Toggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="0">
-                                            <Card.Body>Hello! I'm the body</Card.Body>
+                                            <Card.Body>
+                                                <table className="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>District</td>
+                                                            <td>Confirmed</td>
+                                                            <td>Active</td>
+                                                            <td>Recovered</td>
+                                                            <td>Deaths</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                 )
