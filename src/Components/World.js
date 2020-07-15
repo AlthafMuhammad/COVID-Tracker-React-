@@ -20,8 +20,8 @@ class World extends Component{
     render(){
         return(
             <div className="row">
-                <h2>World Data</h2> 
                 <div className="col-md-12">
+                    <h2>World Data</h2> 
                     <Table responsive className="table table-info table-bordered table-striped">
                         <thead>
                             <tr>
@@ -37,7 +37,7 @@ class World extends Component{
                                 this.state.data.map((itm,ky)=>{
                                     return(
                                         <tr>
-                                            <td>{itm.country} <img style={{width:'3em', marginLeft:'10px'}} src={itm.countryInfo.flag}/></td>
+                                            <td>{itm.country} <img style={{width: '3em', marginLeft:'10 px'}} src={itm.countryInfo.flag}/></td>
                                             <td>{itm.cases}</td>
                                             <td>{itm.active}</td>
                                             <td>{itm.recovered}</td>

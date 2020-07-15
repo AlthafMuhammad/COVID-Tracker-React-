@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import India from './Components/India';
 import World from './Components/World';
+import Footer from './Components/Footer';
 import {
   BrowserRouter as Router,
   Link,
@@ -30,8 +31,8 @@ function App() {
             </Route>
           </Switch>
         </div>
-      </Router>
-      
+        <Footer/>
+      </Router>     
   );
 }
 

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Header extends Component{
     render(){
         return(
-            <Navbar bg="dark" variant="dark">
+            <Navbar responsive bg="dark" variant="dark" fixed="top">
             <Navbar.Brand href="/">COVID - 19 Tracker</Navbar.Brand>
             <Nav className="mr-auto">
               <Link className="nav-link" to="/india">India</Link>

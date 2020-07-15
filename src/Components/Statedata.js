@@ -22,7 +22,7 @@ class Statedata extends Component{
         let keys=Object.keys(this.state.stateData);
         return(
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12" style={{padding:'1em'}}>
                     <Accordion>
                         {
                             keys.map((itm,ky)=>{
