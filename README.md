@@ -1,4 +1,4 @@
-COVID - 19 Status Tracker using React JS
+<h1>COVID - 19 Status Tracker using React JS</h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -10,6 +10,8 @@ This website shows the following:
      
 https://althafmuhammad.me/COVID19-Tracker-React/
 
+Data Sources: <a href="https://api.covid19india.org/">COVID-19 India Org Data Operations Group</a>
+              <a href="https://corona.lmao.ninja/">disease.sh - Open Disease Data</a>
 
 
 
