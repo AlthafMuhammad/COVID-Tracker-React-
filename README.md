@@ -8,7 +8,7 @@ This website shows the following:
   2) World  - Total Cases, Active Cases, Recovered, Total Deaths
      Statuses of all countries around the world.
      
-      
+https://althafmuhammad.me/COVID19-Tracker-React/
 
 
 
