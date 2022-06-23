@@ -8,7 +8,7 @@ This website shows the following:
   2) World  - Total Cases, Active Cases, Recovered, Total Deaths
      Statuses of all countries around the world.
      
-https://althafmuhammad.me/COVID19-Tracker-React/
+https://althafmuhammad.github.io/COVID19-Tracker-React/
 
 Data Sources: <a href="https://api.covid19india.org/">COVID-19 India Org Data Operations Group</a>
               <a href="https://corona.lmao.ninja/">disease.sh - Open Disease Data</a>
